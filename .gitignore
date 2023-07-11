@@ -1,0 +1,22 @@
+insert into artist values ( 036, "chiru" , "male")
+select * from artist
+create table producer (Prod_id int, Prod_Name varchar(255), Prod_Phonen varchar(255))
+insert into producer values (1 , "dilraju" , "9845089533")
+insert into producer values (2 , "vivek" , "7411338005")
+insert into producer values (3 , "ajay" , "9845089535")
+insert into producer values (4 , "subash" , "9845089536")
+insert into producer values (5 , "anitha" , "9845089537")
+select * from producer
+create table flim (Film_id int , Film_Title varchar(255), catogery varchar(255), Film_Lang varchar(255), Prod_id int) 
+select * from flim
+insert into flim values ( 001 , "girls" , "horror" , "kannada", 1)
+insert into flim values ( 002, "are" , "horror" , "tmil", 2)
+insert into flim values ( 003 , "more" , "than" , "kannada", 3)
+insert into flim values ( 004 , "ever" , "horror1" , "kannada", 4)
+insert into flim values ( 005 , "girls" , "ever" , "kannada", 5)
+create table casting (Art_id int , Film_id int , catogery varchar(255))
+insert into casting values  (007, 001, "horror")
+insert into casting values  (010, 001, "horror")
+insert into casting values  (011, 001, "horror")
+insert into casting values  (012, 001, "horror")
+insert into casting values  (013, 001, "horror")
